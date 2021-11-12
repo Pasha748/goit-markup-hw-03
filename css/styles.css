@@ -12,6 +12,29 @@
   --contacts-color: #757575;
   --second-contacts-color: rgba(255, 255, 255, 0.6);
 }
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+
 body {
   font-family: 'roboto', sans-serif;
 }
@@ -26,10 +49,31 @@ body {
 .nav-link.current {
   color: var(--accent-color);
 }
+
 /* --------------Header-------------- */
 
 .header {
   background-color: var(--main-background-color);
+  display: flex;
+  align-items: center;
+}
+.header-navigation {
+  display: flex;
+  align-items: center;
+}
+
+.header-contacts {
+  display: flex;
+  justify-content: end;
+}
+
+.header-list {
+  display: flex;
+  align-items: center;
+  margin-left: 93px;
+}
+.header-item:not(:last-child) {
+  margin-right: 50px;
 }
 
 .logo {
@@ -39,6 +83,9 @@ body {
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: #2196f3;
+  margin-left: 15px;
+  padding-top: 24px;
+  padding-bottom: 25px;
 }
 
 .logo-studio {
@@ -50,6 +97,9 @@ body {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  display: block;
 }
 .nav-link:hover,
 .nav-link:focus {
@@ -61,6 +111,7 @@ body {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--contacts-color);
+  margin-right: 50px;
 }
 .header-mail:hover,
 .header-mail:focus {
@@ -84,6 +135,11 @@ body {
   background-color: var(--second-background-color);
 }
 
+.hero-container {
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+
 .hero-title {
   font-weight: 900;
   font-size: 44px;
@@ -92,6 +148,8 @@ body {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--main-tittle-color);
+  max-width: 696px;
+  margin: auto;
 }
 
 .hero-button {
@@ -106,6 +164,13 @@ body {
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
+  display: block;
+  padding: 10px 32px;
+  margin: auto;
+  margin-top: 30px;
+  border-radius: 5px;
+  flex-wrap: wrap;
+  border-color: var(--accent-color);
 }
 .hero-button:hover,
 .hero-button:focus {
@@ -124,9 +189,19 @@ body {
   position: absolute;
   width: 1px;
 }
+.benefiys-container {
+  margin-top: 94px;
+}
+.benefits-list {
+  display: flex;
+}
 
 .benefits {
   background-color: var(--main-background-color);
+}
+.benefits-item:not(:last-child) {
+  margin-right: 30px;
+  max-width: 270px;
 }
 .benefits-item-title {
   font-weight: 700;
