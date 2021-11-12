@@ -223,6 +223,16 @@ body {
 .activity {
   background-color: var(--main-background-color);
 }
+.activity-container {
+  margin-top: 94px;
+}
+.activity-list {
+  display: flex;
+  margin-top: 50px;
+}
+.activity-item:not(:last-child) {
+  margin-right: 30px;
+}
 
 .activity-title {
   font-weight: 700;
@@ -237,6 +247,13 @@ body {
 
 .team {
   background-color: var(--third-background-color);
+}
+.team-container {
+  margin-top: 94px;
+}
+.team-list {
+  display: flex;
+  justify-content: space-between;
 }
 
 .team-item-title {
