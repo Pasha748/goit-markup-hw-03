@@ -404,6 +404,7 @@ body {
 }
 .products-container {
   padding: 20px 24px;
+  width: 1200px;
 }
 .port-products-list {
   display: flex;
